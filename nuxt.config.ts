@@ -1,13 +1,15 @@
 import Aura from "@primeuix/themes/aura";
 import tailwindcss from "@tailwindcss/vite";
+import ViteYaml from "@modyfi/vite-plugin-yaml";
+
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ["@nuxt/eslint", "@primevue/nuxt-module", "@pinia/nuxt"],
+  modules: ["@nuxt/eslint", "@primevue/nuxt-module", "@pinia/nuxt", "@nuxt/icon"],
   css: ["~/assets/css/main.css"],
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [tailwindcss(), ViteYaml()],
   },
   primevue: {
     autoImport: true,
