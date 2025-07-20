@@ -1,0 +1,31 @@
+---
+- separator: true
+- label: Featured Projects
+  items:
+  - label: NLP Toolkit
+    route: "/nlp-toolkit"
+  - label: Word Search Puzzle
+    route: "/word-search-puzzle"
+  - label: Regex Train
+    url: https://kubarium.github.io/regex-train/
+    target: _blank
+  - label: Eisenhower Box
+    url: https://kubarium.github.io/eisenhower-box/
+    target: _blank
+  - label: Game Development with Blender and Godot
+    url: https://www.amazon.com/dp/1801816026
+    target: _blank
+  # - label: Decoupage
+  #   disabled: true
+  # - label: Dishcovery
+  #   disabled: true
+  # - label: Resume Smith
+  #   disabled: true
+- label: Categories
+  items:
+  - label: Web Development
+  - label: Game Development
+  - label: Writing
+  - label: Talks & Mentorship
+  - label: Consulting & Tools
+- separator: true
