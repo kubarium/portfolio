@@ -8,19 +8,8 @@ import TheMenu from '@/data/TheMenu.yaml';
         <div class="inline-flex items-center gap-1 p-2">
           <Avatar image="https://gravatar.com/userimage/91219185/5f3c764df471978a2e0645a22f363d2d.jpeg" class="mr-2"
             size="xlarge" shape="circle" />
-          <span class="text-2xl font-semibold">Kumsal Obuz</span>
+          <router-link class="text-2xl font-semibold no-underline!" to="/">Kumsal Obuz</router-link>
         </div>
-        <ButtonGroup>
-          <Button aria-label="Steam" size="" class="p-button-icon">
-            <Icon name="fa6-brands:steam-symbol" />
-          </Button>
-          <Button aria-label="Amazon" icon="pi pi-amazon" size="" class="p-button-icon" />
-          <Button aria-label="GitHub" icon="pi pi-github" size="" class="p-button-icon" />
-          <Button aria-label="LinkedIn" icon="pi pi-linkedin" size="" class="p-button-icon" />
-          <Button aria-label="YouTube" icon="pi pi-youtube" size="" class="p-button-icon" />
-          <Button aria-label="Resume" icon="pi pi-file-pdf" size="" class="p-button-icon" />
-          <Button aria-label="Email" icon="pi pi-envelope" size="" class="p-button-icon" />
-        </ButtonGroup>
       </div>
     </template>
     <template #submenulabel="{ item }">
@@ -37,18 +26,8 @@ import TheMenu from '@/data/TheMenu.yaml';
       </a>
     </template>
     <template #end>
-      <div class="flex flex-col items-center gap-2 p-2">
-        <a href="https://www.codementor.io/@kubarium?refer=badge" target="_blank">
-          <img src="https://www.codementor.io/m-badges/kubarium/im-a-cm-g.svg" alt="Codementor badge">
-        </a>
-      </div>
+
     </template>
+    <template #submenuitem="slotProps"></template>
   </Menu>
 </template>
-
-<style lang="css" scoped>
-.p-button-icon {
-  max-width: fit-content;
-  padding: 5px 8px;
-}
-</style>

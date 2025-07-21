@@ -5,7 +5,8 @@
   - label: NLP Toolkit
     route: "/nlp-toolkit"
   - label: Word Search Puzzle
-    route: "/word-search-puzzle"
+    url: "https://word-search-puzzles.onrender.com/"
+    target: _blank
   - label: Regex Train
     url: https://kubarium.github.io/regex-train/
     target: _blank
@@ -21,11 +22,10 @@
   #   disabled: true
   # - label: Resume Smith
   #   disabled: true
-- label: Categories
-  items:
-  - label: Web Development
-  - label: Game Development
-  - label: Writing
-  - label: Talks & Mentorship
-  - label: Consulting & Tools
-- separator: true
+# - label: Categories
+#   items:
+#   - label: Web Development
+#   - label: Game Development
+#   - label: Writing
+#   - label: Talks & Mentorship
+#   - label: Consulting & Tools
