@@ -1,2 +1,26 @@
 @import "tailwindcss";
 @import "primeicons/primeicons.css";
+
+@tailwind utilities;
+
+p {
+  @apply mb-3;
+}
+a {
+  @apply underline;
+}
+a.p-button {
+  @apply no-underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+/* .p-imagecompare-slider {
+  @apply bg-sky-900/0 border-4 border-amber-800 text-amber-900;
+} */
+
