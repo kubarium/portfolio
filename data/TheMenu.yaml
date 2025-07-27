@@ -5,8 +5,7 @@
   - label: NLP Toolkit
     route: "/nlp-toolkit"
   - label: Word Search Puzzle
-    url: "https://word-search-puzzles.onrender.com/"
-    target: _blank
+    route: "/word-search-puzzle"
   - label: Regex Train
     url: https://kubarium.github.io/regex-train/
     target: _blank
