@@ -1,8 +1,11 @@
 <script setup lang='ts'>
+useHead({
+  title: 'NLP Toolkit'
+})
 const techStack = [
-  "Vue.js", "UIKit", "JSON", "Tailwind", "Nuxt.js","Nuxt UI", "XML", "NLP"
+  "Vue.js", "UIKit", "JSON", "Tailwind", "Nuxt.js", "Nuxt UI", "XML", "NLP"
 ]
-const images = ["Turkish-Framenet-Palazlanmak-Before", "Turkish-Framenet-Palazlanmak-After", "Turkish-Morphological-Analysis-Before", "Turkish-Morphological-Analysis-After", "Turkish-Wordnet-Yemek-Before", "Turkish-Wordnet-Yemek-After"].map(img => ({image: `images/${img}.jpg`,description:`${img.replaceAll('-',' ')}`}))
+const images = ["Turkish-Framenet-Palazlanmak-Before", "Turkish-Framenet-Palazlanmak-After", "Turkish-Morphological-Analysis-Before", "Turkish-Morphological-Analysis-After", "Turkish-Wordnet-Yemek-Before", "Turkish-Wordnet-Yemek-After"].map(img => ({ image: `images/${img}.jpg`, description: `${img.replaceAll('-', ' ')}` }))
 </script>
 <template>
   <Panel class="flex-grow px-12 overflow-auto">
@@ -95,9 +98,9 @@ const images = ["Turkish-Framenet-Palazlanmak-Before", "Turkish-Framenet-Palazla
           <Button icon="pi pi-github" as="a" label="GitHub Repo"
             href="https://github.com/kubarium/nlptoolkit-web-simple" target="_blank" rel="noopener" />
         </p>
-        <h3 class="py-2">Tech Stack</h3>
-        <div class="flex flex-row flex-wrap gap-2 max-w-40">
-          <Tag v-for="tech in techStack.sort()" :key="tech" :value="tech" severity="info" />
+        <h3 class="py-2">Tech Stack & Tools</h3>
+        <div class="flex flex-row flex-wrap gap-2 max-w-52">
+          <TagCloud :tags="techStack" />
         </div>
       </div>
     </div>
