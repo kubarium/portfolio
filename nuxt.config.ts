@@ -1,7 +1,6 @@
+import ViteYaml from "@modyfi/vite-plugin-yaml";
 import Aura from "@primeuix/themes/aura";
 import tailwindcss from "@tailwindcss/vite";
-import ViteYaml from "@modyfi/vite-plugin-yaml";
-
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
@@ -17,6 +16,11 @@ export default defineNuxtConfig({
       theme: {
         preset: Aura,
       },
+    },
+  },
+  app: {
+    head: {
+      title: "Kumsal Obuz - Founder, Developer, Educator",
     },
   },
 });
