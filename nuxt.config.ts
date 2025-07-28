@@ -5,7 +5,13 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ["@nuxt/eslint", "@primevue/nuxt-module", "@pinia/nuxt", "@nuxt/icon"],
+  modules: [
+    "@nuxt/eslint",
+    "@primevue/nuxt-module",
+    "@pinia/nuxt",
+    "@nuxt/icon",
+    "nuxt-codemirror",
+  ],
   css: ["~/assets/css/main.css"],
   vite: {
     plugins: [tailwindcss(), ViteYaml()],
