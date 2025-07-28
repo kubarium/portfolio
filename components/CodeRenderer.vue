@@ -2,7 +2,6 @@
 import { javascript } from '@codemirror/lang-javascript';
 import { Decoration, EditorView, ViewPlugin } from '@codemirror/view';
 import { indentationMarkers } from '@replit/codemirror-indentation-markers';
-import { okaidia } from '@uiw/codemirror-theme-okaidia';
 
 const props = defineProps<{
   file: string,
@@ -25,8 +24,7 @@ function lineHighlighter(lines: number[]) {
   })
 }
 const extensions = [
-  javascript(),
-  okaidia, indentationMarkers(),
+  javascript(), indentationMarkers(),
   lineHighlighter(props.highlightLines || [])
 ]
 
@@ -35,7 +33,7 @@ const { data } = await useFetch(`/api/code-renderer?file=${props.file}`)
 code.value = data.value?.payload || ""
 </script>
 <template>
-  <NuxtCodeMirror v-model="code" :read-only="true" :extensions="extensions" :basic-setup="true" :theme="okaidia" />
+  <NuxtCodeMirror v-model="code" :read-only="true" :extensions="extensions" :basic-setup="true" />
 </template>
 <style>
 .cm-highlighted-line {
